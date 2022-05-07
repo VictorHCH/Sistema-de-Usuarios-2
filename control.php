@@ -30,7 +30,7 @@ switch ($accion){
             $dato=$usu.$t;
             fseek($arch,$reg*16);
             fwrite($arch,$dato);
-            if($c1 != null && $c2 != null && $c1==$c2){
+            if($c1 != null && $c2 != null && $c1 == $c2){
                 $c1=substr($c1."   ",0,3);
                 fwrite($arch,$c1);
                 fclose($arch);
