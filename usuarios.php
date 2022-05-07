@@ -37,7 +37,7 @@
         <input type="submit" name="action" value="Agregar">
         <input type="submit" name="action" value="Modificar">
         <input type="submit" name="action" value="Borrar">
-        <input type="submit" name="action" value="Seleccinar">
+        <input type="submit" name="action" value="Seleccionar">
         <input type="submit" name="action" value="Cancelar">
     </form>
 </body>
