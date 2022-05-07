@@ -52,14 +52,30 @@ session_start();
             if(isset($usuario)){
                 $_SESSION["mod"] = $usuario;
                 $mod = $_SESSION["mod"];
-                $nombre = substr($_SESSION["usuarios"][$mod], 0, 12);
+                $archivo = fopen("usuarios.dat", "r");
+                fseek($archivo, $usuario*16);
+                $d = fread($archivo, 16);
+                $u = trim(substr($d,0,12)); 
+                $t = trim(substr($d,12,1));
+                fclose($archivo);
                 ?>
                 <h1>Modificar usuarios</h1>
                 <form action="control.php" method="post">
-                    Usuario: <input type="text" name="usuario" value="<?php echo $nombre ?>"><br><br>
+                    Usuario: <input type="text" name="usuario" value="<?php echo $u ?>"><br><br>
                     Tipo: <select name="tipo" id="1">
                         <option value="1">Usuario</option>
-                        <option value="2">Administrador</option>
+                        <?php
+                            if($t == 'a'){
+                                ?>
+                                    <option value="2" selected>Administrador</option>
+                                <?php
+                            }
+                            else{
+                                ?>
+                                    <option value="2">Administrador</option>
+                                <?php
+                            }
+                        ?>
                     </select><br><br>
                     Contraseña: <input type="password" name="contra1" ><br><br>
                     Contraseña: <input type="password" name="contra2" ><br><br>

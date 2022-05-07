@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,5 +32,15 @@
             <li><a href="#">Salir</a></li>
         </ul>
     </nav>
+    <br>
+    <?php
+        if(isset($_SESSION['mod'])){
+            $mod = $_SESSION["mod"];
+            $nombre = substr($_SESSION["usuarios"][$mod], 0, 12);
+            ?>
+                <h2>Sesion iniciada con: <?php echo $nombre ?></h2>
+            <?php
+        }
+    ?>
 </body>
 </html>
