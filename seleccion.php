@@ -23,7 +23,7 @@ session_start();
         if($x == "Borrar"){
             return 3;
         }
-        if($x == "Seleccinar"){
+        if($x == "Seleccionar"){
             return 4;
         }
         if($x == "Cancelar"){
