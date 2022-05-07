@@ -108,9 +108,13 @@ session_start();
            break;
         case 4:
             $_SESSION['mod'] = $usuario;
-            header('Location: index.php');
+            if($usuario > 0){
+                header('Location: index.php');
+            }
+            else{
+                header('Location: usuarios.php');
+            }
             break;
-
     }
 ?>
 </body>

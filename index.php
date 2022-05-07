@@ -29,7 +29,7 @@
                     <li><a href="#">Usu Cron</a></li>
                 </ul>
             </li>
-            <li><a href="#">Salir</a></li>
+            <li><a href="salir.php">Salir</a></li>
         </ul>
     </nav>
     <br>
