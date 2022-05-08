@@ -19,8 +19,8 @@
             <li><a href="usuarios.php">Usuarios</a></li>
             <li><a href="#">Procesos</a>
                 <ul>
-                    <li><a href="usuariosExport.php" target="_blank">Exportar</a></li>
-                    <li><a href="importar.php">Importar</a></li>
+                    <li><a href="indexExportar.php" target="_blank">Exportar</a></li>
+                    <li><a href="indexImportar.php">Importar</a></li>
                 </ul>
             </li>
             <li><a href="#">Reportes</a>
@@ -29,7 +29,7 @@
                     <li><a href="#">Usu Cron</a></li>
                 </ul>
             </li>
-            <li><a href="salir.php">Salir</a></li>
+            <li><a href="indexSalir.php">Salir</a></li>
         </ul>
     </nav>
     <br>

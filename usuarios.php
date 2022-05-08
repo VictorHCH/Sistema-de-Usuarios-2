@@ -19,7 +19,7 @@
 <body>
     <h1>Busqueda de Usuarios</h1>  
     Localiza: <input type="text"><br>
-    <form action="seleccion.php" method="post">
+    <form action="usuariosAccion.php" method="post">
         <select name="usuarios" size="15">
             <?php
                 foreach ($separados as $key => $s){

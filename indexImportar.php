@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body align="center">
-    <form action="recibirArchivo.php" method="post" enctype="multipart/form-data">
+    <form action="indexImportarRecibir.php" method="post" enctype="multipart/form-data">
         <h1>Importar Archivo</h1>
         <label for="archivo">Selecciones arrchivo: </label>
         <input type="file" name="archivo" id="archivo"><br><br>

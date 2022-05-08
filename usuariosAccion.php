@@ -60,7 +60,7 @@ session_start();
                 fclose($archivo);
                 ?>
                 <h1>Modificar usuarios</h1>
-                <form action="control.php" method="post">
+                <form action="usuariosAccionModificar.php" method="post">
                     Usuario: <input type="text" name="usuario" value="<?php echo $u ?>"><br><br>
                     Tipo: <select name="tipo" id="1">
                         <option value="1">Usuario</option>
@@ -96,7 +96,7 @@ session_start();
             ?>
                 <h1>Eliminar Usuarios</h1>
                 Realmente desea eliminar al usuario:<span id="usuario"> <?php echo $nombre; ?> </span><br><br>
-                <form action="borrarU.php" method="post">
+                <form action="usuariosBorrar.php" method="post">
                     <input type="submit" name="action" value="Borrar">
                     <input type="submit" name="action" value="Cancelar">
                 </form>

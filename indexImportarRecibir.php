@@ -17,7 +17,7 @@
                     mkdir($dirCarpeta, 0777);
                 }
                 move_uploaded_file($_FILES["archivo"]["tmp_name"],$dirCarpeta."\archivo.csv");
-                header("location: procesoImportar.php");
+                header("location: indexImportarProceso.php");
             }
             else{
                 ?>
