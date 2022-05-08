@@ -38,7 +38,7 @@ session_start();
         case 1:
             ?>
                 <h1>Agregar Usuarios</h1>
-                <form action="agregarUsuarios.php" method="post">
+                <form action="usuariosAdd.php" method="post">
                     Usuario: <input type="text" name="usuario"><br><br>
                     Tipó: <select name="tipo"><option value="0">Usuario</option><option value="1">Administrador</option></select><br><br>
                     Contraseña: <input type="password" name="pass1"><br><br>
