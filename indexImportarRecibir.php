@@ -21,7 +21,7 @@
             else{
                 ?>
                 <h1>Solo se permiten archivos CSV</h1>
-                <a href="index.php">Volver...</a>
+                <a href="indexImportar.php">Volver...</a>
                 <?php
             }
 
