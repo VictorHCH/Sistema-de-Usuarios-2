@@ -7,8 +7,11 @@ if(file_exists($nombreArchivo)){
     foreach ($arch as $key => $value) {
         if($value != ""){
             $separado = explode(",", $value);
-            $usuario = $separado[0].str_repeat(" ", 12- strlen($separado[0])).$separado[1].trim($separado[2]);
-
+            $u = substr($separado[0].'            ', 0, 12);
+            $t = $separado[1];
+            $p = substr($separado[2].'   ',0,3);
+            // $usuario = $separado[0].str_repeat(" ", 12- strlen($separado[0])).$separado[1].trim($separado[2]);
+            $usuario = $u.$t.$p;
             $todo .= $usuario;
         }
     }
