@@ -15,6 +15,7 @@ if(file_exists($nombreArchivo)){
     $base = fopen("usuarios.dat", "w");
     fwrite($base, $todo);
     fclose($base);
+    unlink($nombreArchivo);
     ?>
     <h1>Fueron importados los datos!!</h1>
     <a href="index.php">Click aqui para volver...</a>

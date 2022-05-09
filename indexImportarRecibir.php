@@ -10,7 +10,6 @@
     $accion = accion(filter_input(0, "accion"));
     if($accion == 1){
         if(is_uploaded_file($_FILES["archivo"]["tmp_name"])){
-            print_r($_FILES["archivo"]);
             if(substr($_FILES["archivo"]["name"], -3) == "csv"){
                 $dirCarpeta = 'C:\xampp\carpeta-segura';
                 if(!is_dir($dirCarpeta)){
