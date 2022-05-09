@@ -9,7 +9,7 @@
 <body align="center">
     <form action="indexImportarRecibir.php" method="post" enctype="multipart/form-data">
         <h1>Importar Archivo</h1>
-        <label for="archivo">Selecciones arrchivo: </label>
+        <label for="archivo">Selección de archivo: </label>
         <input type="file" name="archivo" id="archivo"><br><br>
         <input type="submit" name="accion" value="Enviar">
         <input type="submit" name="accion" value="Cancelar">
