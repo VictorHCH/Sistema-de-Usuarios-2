@@ -13,7 +13,7 @@ ob_start();
 </head>
 <body style="text-align: center;">
     <h1>Usuarios del sistema</h1>
-    <img src="" alt="Logo Escuela">
+    <!-- <img src="logo.png" alt="Logo Escuela"> -->
     <?php
     $arch = fopen("usuarios.dat", "r");
     echo '<table border=2 style="width=50%; margin: 10px auto" > <tbody>';
