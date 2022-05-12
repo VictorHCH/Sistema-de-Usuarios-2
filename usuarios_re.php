@@ -13,7 +13,7 @@ ob_start();
 </head>
 <body style="text-align: center;">
     <h1>Usuarios del sistema</h1>
-    <!-- <img src="logo.png" alt="Logo Escuela"> -->
+    <img src="logo.png" alt="Logo Escuela" width="150px">
     <?php
     $arch = fopen("usuarios.dat", "r");
     echo '<table border=2 style="width=50%; margin: 10px auto" > <tbody>';
@@ -46,6 +46,6 @@ ob_start();
     // $dompdf->loadHtml("HOLA MUNDO");
     $dompdf->loadHtml($html);
     $dompdf->setPaper("letter");
-    $dompdf->render();
+    $dompdf->render("Hola, mundo");
     $dompdf->stream("ReporteUsuarios.pdf", array("Attachment"=>false));
 ?>
