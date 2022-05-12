@@ -25,7 +25,7 @@
             </li>
             <li><a href="#">Reportes</a>
                 <ul>
-                    <li><a href="#">Usu Alfa</a></li>
+                    <li><a href="usuarios_re.php">Usu Alfa</a></li>
                     <li><a href="#">Usu Cron</a></li>
                 </ul>
             </li>

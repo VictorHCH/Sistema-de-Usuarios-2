@@ -13,10 +13,10 @@ ob_start();
 </head>
 <body style="text-align: center;">
     <h1>Usuarios del sistema</h1>
-    <!-- <img src="logo.png" alt="Logo Escuela"> -->
+    <img src="http://<?php echo $_SERVER['HTTP_HOST'];?>/Sistema-de-Usuarios/logo.png" width="200px">
     <?php
     $arch = fopen("usuarios.dat", "r");
-    echo '<table border=2 style="width=50%; margin: 10px auto" > <tbody>';
+    echo '<table border=2 style="width=50%; margin: 10px auto"> <tbody>';
     echo '<tr><th>Usuarios</th><th>Tipo</th></tr>';
     while (!feof($arch)){
         $dat = fread($arch, 16);
