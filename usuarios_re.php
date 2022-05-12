@@ -46,6 +46,6 @@ ob_start();
     // $dompdf->loadHtml("HOLA MUNDO");
     $dompdf->loadHtml($html);
     $dompdf->setPaper("letter");
-    $dompdf->render();
+    $dompdf->render("Hola, mundo");
     $dompdf->stream("ReporteUsuarios.pdf", array("Attachment"=>false));
 ?>
