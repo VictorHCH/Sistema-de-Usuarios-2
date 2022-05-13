@@ -13,7 +13,7 @@ ob_start();
 </head>
 <body style="text-align: center;">
     <h1>Usuarios del sistema</h1>
-    <img src="http://<?php echo $_SERVER['HTTP_HOST'];?>/Sistema-de-Usuarios/logo.jpg" width="200px">
+    <img src="http://<?php echo $_SERVER['HTTP_HOST'];?>/Sistema-de-Usuarios/logo.png" width="200px">
     <?php
     $arch = fopen("usuarios.dat", "r");
     echo '<table border=2 style="width=50%; margin: 10px auto"> <tbody>';
@@ -22,14 +22,8 @@ ob_start();
         $dat = fread($arch, 16);
         $u = substr($dat, 0, 12);
         $t = substr($dat, 12, 1);
-        if($t == 'a'){
-            $tipo = "Administrador";
-        }
-        else{
-            $tipo = "Usuario";
-        }
         if(strlen($u)>0){
-            printf("<tr><th>$u</th><th>$tipo</th></tr>");
+            printf("<tr><th>$u</th><th>$t</th></tr>");
         }
     }
     fclose($arch);
