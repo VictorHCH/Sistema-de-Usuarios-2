@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (!isset($_SESSION["sesion"]) || $_SESSION["sesion"] == 0) {
+    header("location: indexInicioSesion.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

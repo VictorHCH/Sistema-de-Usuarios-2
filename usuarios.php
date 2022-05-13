@@ -1,5 +1,8 @@
 <?php
     session_start();
+    if (!isset($_SESSION["sesion"]) || $_SESSION["sesion"] == 0) {
+        header("location: indexInicioSesion.php");
+}
     $us = file("usuarios.dat");
     $numRegistros = sizeof($us);
     if ($numRegistros >0){
