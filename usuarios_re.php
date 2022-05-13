@@ -1,9 +1,5 @@
 <?php
 ob_start();
-
-?>
-
-<?php
 session_start();
 if (!isset($_SESSION["sesion"]) || $_SESSION["sesion"] == 0) {
     header("location: indexInicioSesion.php");
@@ -28,8 +24,16 @@ if (!isset($_SESSION["sesion"]) || $_SESSION["sesion"] == 0) {
         $dat = fread($arch, 16);
         $u = substr($dat, 0, 12);
         $t = substr($dat, 12, 1);
+
+        if($t == 'a'){
+            $tipo = "Administrador";
+        }
+        else{
+            $tipo = "Usuario";
+        }
+
         if(strlen($u)>0){
-            printf("<tr><th>$u</th><th>$t</th></tr>");
+            printf("<tr><th>$u</th><th>$tipo</th></tr>");
         }
     }
     fclose($arch);
